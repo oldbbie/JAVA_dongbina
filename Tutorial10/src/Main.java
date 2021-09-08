@@ -31,15 +31,34 @@
 //
 //}
 
+//public class Main {
+//	
+//	public static char function(String input) {
+//		//charAt 어디에 위치한 값을 리턴한다.
+//		return input.charAt(input.length() - 1);
+//	}
+//	
+//	public static void main (String[] args) {
+//		System.out.println("Hello World의 마지막 단어는 " + function("Hello World"));
+//	}
+//	
+//}
+
 public class Main {
 	
-	public static char function(String input) {
-		//charAt 어디에 위치한 값을 리턴한다.
-		return input.charAt(input.length() - 1);
+	public static int max(int a, int b) {
+		return (a>b) ? a : b;
 	}
 	
-	public static void main (String[] args) {
-		System.out.println("Hello World의 마지막 단어는 " + function("Hello World"));
+	public static int function(int a, int b, int c) {
+		int result = max(a,b);
+		result = max(result,c);
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println("(354, 756, 222) 중에서 가장 큰 값은 " + function(354, 756, 222));
 	}
 	
 }
